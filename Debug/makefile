@@ -44,7 +44,7 @@ all: CPP_Ritz
 CPP_Ritz: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -L/usr/local/include/symengine -o "CPP_Ritz" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "CPP_Ritz" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

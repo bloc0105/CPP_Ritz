@@ -8,13 +8,12 @@
 
 #include <iostream>
 #include <string>
-#include <expression.h>
-using SymEngine::Expression;
+#include "symengine/expression.h"
 
 int main() {
 	std::cout << "!!!Hello World!!!" << std::endl; // prints !!!Hello World!!!
-	const std::string &x = "x";
-	Expression xx(x);
+	std::string x = "x";
+	SymEngine::Expression xx(x);
 	std::cout << "X is " << x << std::endl;
 	return 0;
 }
