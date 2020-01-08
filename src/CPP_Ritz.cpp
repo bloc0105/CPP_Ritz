@@ -10,12 +10,12 @@
 
 #include <iostream>
 #include <string>
-#include "symengine/expression.h"
+#include "symengine/symbol.h"
 
 int main() {
 	std::cout << "!!!Hello World!!!" << std::endl; // prints !!!Hello World!!!
-	const std::string x = "1234";
-	SymEngine::Expression xx(x);
-	std::cout << "X is " << x << std::endl;
+	//const std::string x = "x";
+	const SymEngine::RCP<const SymEngine::Symbol> xx = (SymEngine::symbol("x"));
+	//std::cout << "X is " << x << std::endl;
 	return 0;
 }
